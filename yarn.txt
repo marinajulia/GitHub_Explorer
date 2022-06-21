@@ -12,3 +12,4 @@ yarn add cross-env -D  (serve pára definir variaveis de ambiante independente d
 yarn add style-loader css-loader -D (para compilar arquivos css)
 yarn add sass-loader -D
 yarn add node-sass -D
+yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh (para não zerar todos os estados quando salvar a aplicação)
