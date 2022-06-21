@@ -1,0 +1,14 @@
+yarn init -y (cria o package.json)
+yarn add react
+yarn add react-dom
+yarn add @babel/core @babel/cli @babel/preset-env -D 
+yarn babel src/index.js --out-file dist/bundle.js (criar pasta dist para o babel compilar o js)
+yarn add @babel/preset-react -D (para permitir o uso do html dentro do javascript)
+yarn add webpack webpack-cli webpack-dev-server -D (para demais conversões, como imagens e css)
+yarn add babel-loader -D
+yarn add html-webpack-plugin -D (para não precisar ficar referenciando o bundle.js)
+yarn add webpack-dev-server -D (para automatizar o yarn webpack)
+yarn add cross-env -D  (serve pára definir variaveis de ambiante independente do sistema operacional da pessoa)
+yarn add style-loader css-loader -D (para compilar arquivos css)
+yarn add sass-loader -D
+yarn add node-sass -D
