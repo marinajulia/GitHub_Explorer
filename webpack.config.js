@@ -1,8 +1,9 @@
 const path = require('path'); //para não ter problemas em diferentes sistemas operacionais com / e \\
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const isDevelopment = process.env.NODE_ENV !== 'production';
 module.exports = {
     mode: 'development',
+    devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.jsx'),
     output:{
         path: path.resolve(__dirname, 'dist'),
